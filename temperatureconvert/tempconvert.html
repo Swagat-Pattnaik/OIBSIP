@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="style.css">
+    <title>Tempconvert</title>
+</head>
+<body>
+    <div class="container" style="display: flex;">
+        <div class="scale1">
+            <label class="celcius" for="celcius" style="color: white;"><h1>Degree Celcius</h1></label><br>
+            <input style="border: 3px solid yellow;" type="text" id="celcius" ><br><br>
+            <div style="display: flex;"><button style="height: 40px; width: 100px; background-color:yellow " onclick="convert()">Convert to Farheniet</button>
+                <button style="height: 40px; width: 100px; background-color:yellow " onclick="crot()">Convert to Kelvin</button>
+            </div><br>
+            <div class="valF"><h1>Converted</h1>
+                <div class="ansF"><h1 style="color: black;" id="res"></h1></div>
+            </div>
+        </div>
+        <div class="scale1">
+            <label class="Farheniet" for="Farheniet" style="color: white;"><h1>Degree Farheniet</h1></label><br>
+            <input style="border: 3px solid yellow;" type="text" id="Farheniet" ><br><br>
+            <div style="display: flex;"><button style="height: 40px; width: 100px; background-color:yellow " onclick="convert1()">Convert to Celcius</button>
+                <button style="height: 40px; width: 100px; background-color:yellow " onclick="crot1()">Convert to Kelvin</button>
+            </div><br>
+            <div class="valF1"><h1>Converted</h1>
+                <div class="ansF1"><h1 style="color: black;" id="res1"></h1></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function convert(){
+            var c = document.getElementById("celcius").value;
+            var f = parseFloat(1.8 * c) + 32;
+            document.getElementById("res").innerHTML=f+"F";
+                }
+        function crot(){
+            var c = document.getElementById("celcius").value;
+            var k= parseInt(c) + 273;
+            document.getElementById("res").innerHTML=k+"K";
+        }    
+        function convert1(){
+            var f = document.getElementById("Farheniet").value;
+            var c = ((f-32)/1.8);
+            document.getElementById("res1").innerHTML=c+"C";
+                }
+        function crot1(){
+            var f = document.getElementById("Farheniet").value;
+            var k= (((f-32)/1.8)+273);
+            document.getElementById("res1").innerHTML=k+"K";
+        }              
+    </script>
+</body>
+</html>

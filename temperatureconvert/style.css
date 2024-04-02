@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url("celcius.jpg");
+}
+.scale1{
+    height: 350px;
+    width: 350px;
+    margin-left: 220px;
+    margin-top: 30px;
+    background-color: black;
+    border: 3px solid yellow;
+}
+#celcius{
+    margin-left: 2px;
+    width: 250px;
+    height: 30px;
+    text-size-adjust: 20px;
+}
+#Farheniet{
+    margin-left: 1px;
+    width: 250px;
+    height: 30px;
+    text-size-adjust: 20px;
+}
+#Kelvin{
+    margin-left: 2px;
+    width: 250px;
+    height: 30px;
+    text-size-adjust: 20px;
+}
+.valF{
+    color: white;
+}
+.ansF{
+    width: 220px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: white;
+    border: 3px solid yellow;
+}
+.valF1{
+    color: white;
+}
+.ansF1{
+    width: 220px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: white;
+    border: 3px solid yellow;
+}
+.valF2{
+    color: white;
+}
+.ansF2{
+    width: 220px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: white;
+    border: 3px solid yellow;
+}
